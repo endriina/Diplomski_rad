@@ -35,11 +35,11 @@ describe("Header", function() {
       pass.addValue('test')
       console.log(pass.getValue());
 
-      var gumbPrijava ='//*[@id="top-header"]/div[1]/div/ul/li[4]/form/div[1]/button';
-      $(gumbPrijava).click();
+      var gumbPrijava =$('//*[@id="top-header"]/div[1]/div/ul/li[4]/form/div[1]/button');
+      gumbPrijava.click();
 
-      var alert =".item.login-warning.alert.alert-warning";
-      $(alert).waitForExist(90000);
+      var alert =$(".item.login-warning.alert.alert-warning");
+      alert.waitForExist(90000);
     }); 
 
   
